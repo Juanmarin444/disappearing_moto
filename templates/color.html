@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>moto</title>
+    </head>
+    <body>
+        <h2>This will display a specific color motorcycle in {{color}}</h2>
+        {% if color == "purple" %}
+            <img src="{{ url_for('static', filename='img/purple_moto.jpg') }}">
+            <p>This if statement is working.</p>
+        {% endif %}
+        {% if color == "red" %}
+            <img src="{{ url_for('static', filename='img/red_moto.jpg') }}">
+        {% endif %}
+        {% if color == "blue" %}
+            <img src="{{ url_for('static', filename='img/blue_moto.jpg') }}">
+        {% endif %}
+        {% if color == "orange" %}
+            <img src="{{ url_for('static', filename='img/orange_moto.jpg') }}">
+        {% endif %}
+    </body>
+</html>
